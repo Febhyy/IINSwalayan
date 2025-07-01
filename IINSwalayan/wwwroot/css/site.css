@@ -1,0 +1,340 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 80px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Promo Banner */
+.promo-banner {
+    background: linear-gradient(135deg, #8B0000, #DC143C);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+    .promo-banner::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
+        animation: shimmer 3s infinite;
+    }
+
+@keyframes shimmer {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Typography */
+.cashback-text {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    line-height: 1;
+}
+
+.voucher-text {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.amount-text {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #FFD700;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
+
+/* Product Banner */
+.product-banner {
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.promo-tag {
+    background: #FF0000;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.product-mascot {
+    width: 100px;
+    height: 100px;
+    background: #FFD700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 20px auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.promo-deal {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #FF1493;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* CTA Button */
+.cta-button {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    border: none;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+        color: #000;
+        text-decoration: none;
+    }
+
+    .cta-button:focus {
+        outline: none;
+        color: #000;
+    }
+
+/* Period Info */
+.period-info {
+    background: rgba(255,255,255,0.2);
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Floating Products */
+.floating-products {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-item {
+    width: 60px;
+    height: 60px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+    .product-item:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+
+    .product-item:nth-child(3) {
+        animation-delay: 1s;
+    }
+
+    .product-item:nth-child(4) {
+        animation-delay: 1.5s;
+    }
+
+    .product-item:nth-child(5) {
+        animation-delay: 2s;
+    }
+
+    .product-item:nth-child(6) {
+        animation-delay: 2.5s;
+    }
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Carousel */
+.carousel-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
+    .carousel-indicators button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid white;
+        background: transparent;
+    }
+
+        .carousel-indicators button.active {
+            background: white;
+        }
+
+/* Feature Cards */
+.feature-card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+    }
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+/* Ripple Animation */
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cashback-text {
+        font-size: 2.5rem;
+    }
+
+    .amount-text {
+        font-size: 3rem;
+    }
+
+    .voucher-text {
+        font-size: 2rem;
+    }
+
+    .promo-deal {
+        font-size: 2rem;
+    }
+
+    .hero-section {
+        padding: 40px 0;
+    }
+
+    .floating-products {
+        display: none;
+    }
+
+    .promo-banner,
+    .product-banner {
+        padding: 20px;
+    }
+
+    .feature-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cashback-text {
+        font-size: 2rem;
+    }
+
+    .amount-text {
+        font-size: 2.5rem;
+    }
+
+    .voucher-text {
+        font-size: 1.5rem;
+    }
+
+    .promo-deal {
+        font-size: 1.8rem;
+    }
+
+    .product-mascot {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}

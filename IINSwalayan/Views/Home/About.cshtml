@@ -1,0 +1,380 @@
+﻿@{
+    ViewData["Title"] = "Tentang IIN Swalayan - Toko Online Terpercaya";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/about.css" asp-append-version="true" />
+}
+
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="@Url.Action("Index", "Home")">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                <i class="fas fa-info-circle"></i> Tentang IIN Swalayan
+            </li>
+        </ol>
+    </div>
+</nav>
+
+<!-- About Hero Section -->
+<section class="about-hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-hero-content">
+                    <h1 class="about-title">Tentang IIN Swalayan</h1>
+                    <p class="about-subtitle">
+                        IIN Swalayan merupakan aplikasi belanja online yang memberikan pengalaman berbelanja yang berbeda dengan manfaat
+                        keanggotaan yang terintegrasi (online dan offline). IIN Swalayan terhubung dengan lebih dari 500 toko swalayan
+                        yang tersebar di seluruh pelosok Indonesia sehingga memungkinkan pengiriman yang cepat dan gratis ongkir.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-hero-image">
+                    <div class="hero-graphic">
+                        <i class="fas fa-store"></i>
+                        <div class="floating-elements">
+                            <div class="float-item float-item-1">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="float-item float-item-2">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="float-item float-item-3">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="about-content">
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar Navigation -->
+            <div class="col-lg-3">
+                <div class="about-sidebar">
+                    <div class="sidebar-menu">
+                        <h5>Menu Informasi</h5>
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#tentang">
+                                    <i class="fas fa-info-circle"></i> Tentang IIN Swalayan
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#syarat">
+                                    <i class="fas fa-file-contract"></i> Syarat & Ketentuan
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#privasi">
+                                    <i class="fas fa-shield-alt"></i> Kebijakan Privasi
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-lg-9">
+                <div class="about-main-content">
+                    <!-- Tentang IIN Swalayan -->
+                    <div id="tentang" class="content-section active">
+                        <h2>Tentang IIN Swalayan</h2>
+
+                        <div class="content-block">
+                            <p>
+                                IIN Swalayan merupakan aplikasi belanja online yang memberikan pengalaman berbelanja yang berbeda dengan manfaat
+                                keanggotaan yang terintegrasi (online dan offline). IIN Swalayan terhubung dengan lebih dari 500 toko swalayan
+                                yang tersebar di seluruh pelosok Indonesia sehingga memungkinkan pengiriman yang cepat dan gratis ongkir.
+                                Menjadikan toko kesayangan Anda kini lebih dekat dalam genggaman dengan beberapa fitur dan manfaat, yaitu:
+                            </p>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <h4>Same Day Delivery & Gratis Ongkir</h4>
+                                <p>
+                                    Dengan berbelanja di IIN Swalayan, produk dapat dikirim dari toko IIN Swalayan terdekat di hari yang
+                                    sama (untuk order yang masuk sebelum pukul 21.00*). Selain itu, gratis ongkir tanpa syarat dan batas juga dapat Anda
+                                    nikmati setiap hari.
+                                </p>
+                                <small class="text-muted">
+                                    *Selama periode PPKM, pengiriman di hari yang sama berlaku untuk order yang masuk sebelum pukul 19.00.
+                                    Order yang masuk setelah pukul 19.00 akan dikirim H+1.
+                                </small>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4>Membership Terintegrasi</h4>
+                                <p>
+                                    Sistem yang terintegrasi dengan offline activity (pembelanjaan langsung di gerai). Sahabat hanya perlu menyebutkan nomor
+                                    member / nomor handphone yang terdaftar pada akun IIN Swalayan atau men-scan barcode member yang ada di aplikasi saat
+                                    melakukan pembayaran di kasir. Secara otomatis, poin pembelanjaan akan langsung terintegrasi ke aplikasi.
+                                </p>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <h4>Keuntungan Member</h4>
+                                <div class="member-benefits">
+                                    <div class="benefit-item">
+                                        <h5><i class="fas fa-coins"></i> A-Poin</h5>
+                                        <p>Poin pembelanjaan yang dapat menjadi cashback atau ditukarkan dengan voucher potongan harga/tebus produk gratis.</p>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <h5><i class="fas fa-ticket-alt"></i> A-Voucher</h5>
+                                        <p>Penawaran voucher belanja langsung tanpa penukaran poin.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Company Stats -->
+                        <div class="stats-section">
+                            <div class="row text-center">
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-item">
+                                        <div class="stat-number">500+</div>
+                                        <div class="stat-label">Toko Partner</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-item">
+                                        <div class="stat-number">100K+</div>
+                                        <div class="stat-label">Produk</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-item">
+                                        <div class="stat-number">1M+</div>
+                                        <div class="stat-label">Pelanggan</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-item">
+                                        <div class="stat-number">50+</div>
+                                        <div class="stat-label">Kota</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Syarat & Ketentuan -->
+                    <div id="syarat" class="content-section">
+                        <h2>Syarat & Ketentuan</h2>
+
+                        <div class="content-block">
+                            <h4>1. Ketentuan Umum</h4>
+                            <ul>
+                                <li>Pengguna harus berusia minimal 17 tahun atau sudah menikah untuk dapat menggunakan layanan IIN Swalayan</li>
+                                <li>Setiap pengguna hanya diperbolehkan memiliki satu akun</li>
+                                <li>Pengguna bertanggung jawab atas keamanan akun dan kata sandi</li>
+                                <li>IIN Swalayan berhak memblokir akun yang melanggar ketentuan</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h4>2. Ketentuan Belanja</h4>
+                            <ul>
+                                <li>Harga produk dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya</li>
+                                <li>Ketersediaan produk terbatas dan berlaku selama stok masih ada</li>
+                                <li>Setiap transaksi pembelian akan dikenakan biaya sesuai yang tertera di aplikasi</li>
+                                <li>Pembayaran harus dilakukan sesuai metode yang tersedia</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h4>3. Ketentuan Pengiriman</h4>
+                            <ul>
+                                <li>Pengiriman gratis berlaku untuk semua area layanan</li>
+                                <li>Waktu pengiriman bervariasi tergantung lokasi dan ketersediaan produk</li>
+                                <li>IIN Swalayan tidak bertanggung jawab atas keterlambatan yang disebabkan force majeure</li>
+                                <li>Produk yang dikirim harus diterima oleh penerima yang berwenang</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h4>4. Ketentuan Pengembalian</h4>
+                            <ul>
+                                <li>Pengembalian produk hanya dapat dilakukan untuk produk yang rusak atau tidak sesuai</li>
+                                <li>Laporan harus dibuat maksimal 24 jam setelah produk diterima</li>
+                                <li>Pengembalian dana akan diproses maksimal 7 hari kerja</li>
+                                <li>Produk makanan dan minuman tidak dapat dikembalikan kecuali rusak</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Kebijakan Privasi -->
+                    <div id="privasi" class="content-section">
+                        <h2>Kebijakan Privasi</h2>
+
+                        <div class="content-block">
+                            <h4>1. Informasi yang Kami Kumpulkan</h4>
+                            <p>IIN Swalayan mengumpulkan informasi yang Anda berikan secara langsung kepada kami, seperti:</p>
+                            <ul>
+                                <li>Nama lengkap dan informasi kontak</li>
+                                <li>Alamat pengiriman dan penagihan</li>
+                                <li>Informasi pembayaran</li>
+                                <li>Riwayat pembelian dan preferensi</li>
+                                <li>Komunikasi dengan layanan pelanggan</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h4>2. Penggunaan Informasi</h4>
+                            <p>Kami menggunakan informasi yang dikumpulkan untuk:</p>
+                            <ul>
+                                <li>Memproses dan mengirimkan pesanan Anda</li>
+                                <li>Menyediakan layanan pelanggan</li>
+                                <li>Mengirimkan informasi promosi dan penawaran khusus</li>
+                                <li>Meningkatkan layanan dan pengalaman pengguna</li>
+                                <li>Mencegah penipuan dan aktivitas mencurigakan</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h4>3. Perlindungan Informasi</h4>
+                            <p>IIN Swalayan berkomitmen untuk melindungi informasi pribadi Anda dengan:</p>
+                            <ul>
+                                <li>Menggunakan enkripsi SSL untuk semua transaksi</li>
+                                <li>Membatasi akses informasi hanya kepada karyawan yang berwenang</li>
+                                <li>Melakukan audit keamanan secara berkala</li>
+                                <li>Tidak menjual atau menyewakan data pribadi kepada pihak ketiga</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h4>4. Hak Pengguna</h4>
+                            <p>Anda memiliki hak untuk:</p>
+                            <ul>
+                                <li>Mengakses dan memperbarui informasi pribadi Anda</li>
+                                <li>Meminta penghapusan data pribadi</li>
+                                <li>Menolak penggunaan data untuk pemasaran</li>
+                                <li>Mengajukan keluhan terkait penggunaan data pribadi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="contact-cta">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h3>Masih Ada Pertanyaan?</h3>
+                <p>Tim customer service kami siap membantu Anda 24/7</p>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <a href="@Url.Action("Contact", "Home")" class="btn btn-primary btn-lg">
+                    <i class="fas fa-phone"></i> Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sidebar navigation
+            const sidebarLinks = document.querySelectorAll('.sidebar-menu .nav-link');
+            const contentSections = document.querySelectorAll('.content-section');
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    // Remove active class from all links and sections
+                    sidebarLinks.forEach(l => l.classList.remove('active'));
+                    contentSections.forEach(s => s.classList.remove('active'));
+
+                    // Add active class to clicked link
+                    this.classList.add('active');
+
+                    // Show corresponding content section
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+
+                        // Smooth scroll to content
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Animate stats when visible
+            const statsSection = document.querySelector('.stats-section');
+            if (statsSection) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateStats();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+                observer.observe(statsSection);
+            }
+
+            function animateStats() {
+                const statNumbers = document.querySelectorAll('.stat-number');
+                statNumbers.forEach(stat => {
+                    const finalValue = stat.textContent;
+                    const numericValue = parseInt(finalValue.replace(/\D/g, ''));
+                    const suffix = finalValue.replace(/[\d,]/g, '');
+
+                    let currentValue = 0;
+                    const increment = numericValue / 50;
+
+                    const timer = setInterval(() => {
+                        currentValue += increment;
+                        if (currentValue >= numericValue) {
+                            stat.textContent = finalValue;
+                            clearInterval(timer);
+                        } else {
+                            stat.textContent = Math.floor(currentValue).toLocaleString() + suffix;
+                        }
+                    }, 30);
+                });
+            }
+
+            // Smooth scroll for floating elements animation
+            const floatingElements = document.querySelectorAll('.float-item');
+            floatingElements.forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.5}s`;
+            });
+        });
+    </script>
+}
